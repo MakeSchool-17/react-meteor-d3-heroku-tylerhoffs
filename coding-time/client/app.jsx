@@ -15,7 +15,11 @@
      render: function() {
        // Return the JSX inside of brackets  
        return (
-         <h1>Coding Time</h1>
+        <div className="container-fluid">
+         <h1 className="page-header text-center" >C<i className="fa fa-clock-o fa-spin"></i>ding Time</h1>
+         <HourForm/>
+         <HourList data={this.data.hours}/>  
+        </div>
        );
      }
    });
